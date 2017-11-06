@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.lightwind.p2pinvest"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // butterKnife的依赖
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    // AsyncHttpClient
+    implementation files('libs/android-async-http-master.jar')
+    // FastJson
+    compile 'com.alibaba:fastjson:1.2.39'
+    compile 'com.alibaba:fastjson:1.2.39.android'
+    // picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    // ViewPagerIndicator
+    implementation project(':ViewPagerIndicator')
+    // banner
+    compile 'com.youth.banner:banner:1.4.10'
+    // glide
+    compile 'com.github.bumptech.glide:glide:4.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+    implementation files('libs/alipaysdk.jar')
+    implementation files('libs/alipaysecsdk.jar')
+    implementation files('libs/alipayutdid.jar')
+    // MPChartLib
+    compile project(':MPChartLib')
+    // GestureLock
+    implementation project(':GestureLock')
+    implementation files('libs/MobCommons-2017.1024.1907.jar')
+    implementation files('libs/MobTools-2017.1024.1907.jar')
+    implementation files('libs/ShareSDK-Alipay-3.1.1.jar')
+    implementation files('libs/ShareSDK-Alipay-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-Alipay-Moments-3.1.1.jar')
+    implementation files('libs/ShareSDK-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-Email-3.1.1.jar')
+    implementation files('libs/ShareSDK-QQ-3.1.1.jar')
+    implementation files('libs/ShareSDK-QZone-3.1.1.jar')
+    implementation files('libs/ShareSDK-ShortMessage-3.1.1.jar')
+    implementation files('libs/ShareSDK-SinaWeibo-3.1.1.jar')
+    implementation files('libs/ShareSDK-TencentWeibo-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Favorite-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Moments-3.1.1.jar')
+}

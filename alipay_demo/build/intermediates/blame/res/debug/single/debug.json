@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_msp_icon.png.flat",
+        "source": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\src\\main\\res\\drawable-hdpi\\msp_icon.png"
+    },
+    {
+        "merged": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\build\\intermediates\\res\\merged\\debug\\layout_pay_main.xml.flat",
+        "source": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\src\\main\\res\\layout\\pay_main.xml"
+    },
+    {
+        "merged": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_msp_demo_title.png.flat",
+        "source": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\src\\main\\res\\drawable-hdpi\\msp_demo_title.png"
+    },
+    {
+        "merged": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_msp_demo_title_bg.png.flat",
+        "source": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\src\\main\\res\\drawable-hdpi\\msp_demo_title_bg.png"
+    },
+    {
+        "merged": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\build\\intermediates\\res\\merged\\debug\\layout_pay_external.xml.flat",
+        "source": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\alipay_demo\\src\\main\\res\\layout\\pay_external.xml"
+    }
+]

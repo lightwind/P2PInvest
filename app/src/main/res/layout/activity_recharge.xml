@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title"/>
+
+    <com.lightwind.p2pinvest.ui.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"/>
+
+                <TextView
+                    android:id="@+id/recharge_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="充值金额"
+                    android:textColor="#333"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="19dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@+id/recharge_text"
+                    android:background="#ccc"/>
+
+                <!-- edittext如果默认看不到光标闪烁，是因为当前编译的系统版本edittext控件的光标颜色和你设置的EditText的背景颜色重叠了，所以看不到而已
+                 android:textCursorDrawable="@null"设置光标的颜色和textColor属性保持一致
+                -->
+                <EditText
+                    android:id="@+id/et_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@+id/view"
+                    android:background="@color/white"
+                    android:hint="请输入充值金额"
+                    android:inputType="numberDecimal"
+                    android:maxLength="19"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13sp">
+                </EditText>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:id="@+id/recharge_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的账户目前可用余额："
+                    android:textColor="#333"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp"/>
+
+                <TextView
+                    android:id="@+id/yue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/recharge_text2"
+                    android:text="0"
+                    android:textColor="#e84768"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/yue_tv"
+                    android:text="元"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/btn_02"
+                android:clickable="false"
+                android:text="充值"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:text="温馨提示："
+                android:textColor="#666"
+                android:textSize="14sp"/>
+
+            <!--text当中使用\n即可换行书写多行文本内容-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/content"
+                android:textColor="#999"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </com.lightwind.p2pinvest.ui.MyScrollView>
+</LinearLayout>
+
+

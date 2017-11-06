@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:light="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title"/>
+
+    <com.lightwind.p2pinvest.ui.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/vp_home"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--</android.support.v4.view.ViewPager>-->
+
+                <!--<com.viewpagerindicator.CirclePageIndicator-->
+                <!--android:id="@+id/cp_home_indicator"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|bottom"-->
+                <!--android:layout_marginBottom="5dp"/>-->
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_home_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/recommend"
+                android:drawablePadding="5dp"
+                android:text="180天计划第一期"
+                android:textColor="@color/product_detail_common"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_attribute_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="本息保障"
+                    android:textColor="@color/home_back_unselected"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_attribute_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="每日计息"
+                    android:textColor="@color/home_back_unselected"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_attribute_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="高额收益"
+                    android:textColor="@color/home_back_unselected"/>
+
+            </LinearLayout>
+
+            <com.lightwind.p2pinvest.ui.RoundProgress
+                android:id="@+id/roundPro_home"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                light:max="100"
+                light:progress="70"
+                light:roundColor="@color/more_text"
+                light:roundProgressColor="@color/round_red_common"
+                light:roundWidth="10dp"
+                light:textSize="20sp"
+                light:textColor="@color/title_back"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预期年利率："
+                    android:textColor="@color/product_detail_common"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_home_year_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10% + 2%"
+                    android:textColor="@color/product_detail_common"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home"
+                android:text="@string/join_in"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/guarantee_icon"
+                android:text="@string/bank"
+                android:textColor="@color/home_back_unselected"/>
+
+        </LinearLayout>
+
+    </com.lightwind.p2pinvest.ui.MyScrollView>
+
+</LinearLayout>

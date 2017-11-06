@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Project\\ASWorkSpace_Project\\P2PInvest\\ViewPagerIndicator\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-gu\\values-gu.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\lightwind\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\fd9f70f63fcc991bd60c7dbd94a0ef32\\res\\values-gu\\values-gu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
